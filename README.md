@@ -17,7 +17,7 @@ Ever set a delay timer on your washing machine only to realize you did the math 
 ### 1️⃣ Run It Locally Like a Pro
 1. Clone the repo like an elite hacker:
     ```sh
-    git clone https://github.com/your-username/delay-start-calculator.git
+    git clone https://github.com/gajMohan/DelayCalc
     cd delay-start-calculator
 
 2. Open index.html in your browser.
