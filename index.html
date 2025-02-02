@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washing Machine Delay Calculator</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007BFF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Delay Calculator">
+    <link rel="icon" type="image/x-icon" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="max-w-md">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center mb-4">Delay Start Calculator</h2>
+            
+            <label class="block text-sm font-medium mb-1">Cycle Length (HH:MM):</label>
+            <input type="time" id="cycleLength" class="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600" required>
+
+            <label class="block text-sm font-medium mt-4 mb-1">Desired End Time (HH:MM):</label>
+            <input type="time" id="desiredEndTime" class="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600" required>
+
+            <button onclick="calculateDelay()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
+                Calculate Delay
+            </button>
+
+            
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker Registered'))
+                .catch(err => console.log('Service Worker Registration Failed:', err));
+        }
+    </script>
+</body>
+</html>
