@@ -19,9 +19,11 @@ Ever set a delay timer on your washing machine only to realize you did the math 
     ```sh
     git clone https://github.com/gajMohan/DelayCalc
     cd delay-start-calculator
+    ```
 
 2. Open index.html in your browser.
-2️⃣ Install as a PWA
+
+### 2️⃣ Install as a PWA
     Open the site in Chrome or Safari on your mobile.
     Tap "Add to Home Screen."
     Launch it like an app!
