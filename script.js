@@ -3,7 +3,7 @@ function calculateDelay() {
     const desiredEndTime = document.getElementById('desiredEndTime').value;
     
     if (!cycleTime || !desiredEndTime) {
-        document.getElementById('result').innerText = "Please enter valid inputs.";
+        alert( "Please enter valid inputs.");
         return;
     }
 
