@@ -32,12 +32,12 @@
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
             <h2 class="text-2xl font-bold text-center mb-4">Delay Start Calculator</h2>
 
-            <div id="presets" class="flex flex-wrap gap-2 mb-4"></div>
-
             <label class="block text-sm font-medium mb-1">Cycle Length (HH:MM):</label>
+            <div id="cycleLengthPresets" class="flex flex-wrap gap-2 mb-2"></div>
             <input type="time" id="cycleLength" class="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600" required>
 
             <label class="block text-sm font-medium mt-4 mb-1">Desired End Time (HH:MM):</label>
+            <div id="desiredEndTimePresets" class="flex flex-wrap gap-2 mb-2"></div>
             <input type="time" id="desiredEndTime" class="w-full p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600" required>
 
             <button onclick="calculateDelay()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
