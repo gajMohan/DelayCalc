@@ -31,7 +31,7 @@ self.addEventListener('fetch', event => {
     }
 
     event.respondWith(
-        fetch(request)
+        fetch(request.mode === 'navigate' ? request : new Request(request, { cache: 'no-cache' }))
             .then(response => {
                 if (response.ok) {
                     const copy = response.clone();
